@@ -82,7 +82,8 @@ local function run()
   end
   check(channel(p.comment, 2) > channel(p.comment, 4), "comments use a warm neutral rather than syntax green")
   check(channel(p.keyword, 4) > channel(p.keyword, 2), "keywords retain a green accent")
-  check(contrast(p.fg, p.comment) >= 1.8, "variables remain visibly brighter than comments")
+  check(contrast(p.fg, p.comment) >= 1.9, "variables remain visibly brighter than comments")
+  check(contrast(p.keyword, p.comment) >= 1.2, "keywords stand apart from comments without font styles")
 
   local groups = require("qingshan.theme").get(p, {
     transparent = false,

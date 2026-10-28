@@ -39,7 +39,12 @@ cp 'extras/alfred/QingShan Dark Large.alfredappearance' ~/.config/alfred/themes/
 ```lua
 config.color_scheme_dirs = { wezterm.home_dir .. "/.config/wezterm/colors" }
 config.color_scheme = "QingShan"
+wezterm.add_to_config_reload_watch_list(
+  wezterm.home_dir .. "/.config/wezterm/colors/QingShan.toml"
+)
 ```
+
+监听配色文件后，更新同名 TOML 也会触发重载。首次加入监听时保存 WezTerm 配置；亦可手动重载配置。
 
 原生拖选使用浅玉底 `jade`、深墨字 `bg_dark`，与 Neovim 的苔绿选区分开。tmux 开启鼠标时普通拖选由其 copy mode 接管；按住 Shift 可使用 WezTerm 原生选区。
 
