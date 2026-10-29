@@ -73,6 +73,10 @@ INTEGRATIONS                                           *qingshan-plugins*
 Vim syntax, Tree-sitter, LSP semantic tokens, diagnostics, references, inlay
 hints, completion menus, search, diffs and terminal ANSI colors are covered.
 
+Docstrings captured as @string.documentation (such as Python function
+docstrings) link to Comment and follow styles.comments. Ordinary strings keep
+their string color. Slides exports also use comment styling for docstrings.
+
 Optional plugin highlights: Telescope, nvim-cmp, blink.cmp, Neo-tree, nvim-tree,
 which-key, gitsigns, mini.statusline, mini.indentscope, mini.cursorword, ibl,
 Lazy and Mason. No plugin modules are loaded by the theme.

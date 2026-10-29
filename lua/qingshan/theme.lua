@@ -232,7 +232,7 @@ function M.get(p, opts)
     ["@module.builtin"] = "Special",
     ["@label"] = "Label",
     ["@string"] = "String",
-    ["@string.documentation"] = "String",
+    ["@string.documentation"] = "Comment",
     ["@string.regexp"] = "Special",
     ["@string.escape"] = "SpecialChar",
     ["@string.special"] = "Special",

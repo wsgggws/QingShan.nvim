@@ -61,7 +61,13 @@ local function run()
   check(hl("Visual").fg == rgb(p.fg), "selection maintains text contrast")
 
   -- Resolve every highlighting layer: semantic tokens must keep the same hierarchy.
-  for _, name in ipairs({ "Comment", "@comment", "@comment.documentation", "@lsp.type.comment" }) do
+  for _, name in ipairs({
+    "Comment",
+    "@comment",
+    "@comment.documentation",
+    "@string.documentation",
+    "@lsp.type.comment",
+  }) do
     local value = hl(name, true)
     check(value.fg == rgb(p.comment) and value.italic and not value.bold, "comment hierarchy: " .. name)
   end
@@ -176,6 +182,10 @@ local function run()
   end
   check(hl("NormalFloat").bg == rgb(p.bg_float), "transparent mode keeps popups readable")
   check(not hl("Comment").italic, "italic comments can be disabled")
+  check(
+    vim.deep_equal(hl("@string.documentation", true), hl("Comment", true)),
+    "docstrings inherit comment color and disabled italics"
+  )
   check(
     hl("@lsp.type.comment", true).fg ~= hl("@lsp.type.keyword", true).fg,
     "comments remain distinct without italics"

@@ -172,6 +172,10 @@
       "literal_string": {
         "color": "#C8D5A4"
       },
+      "literal_string_doc": {
+        "color": "#A7A6A3",
+        "italic": true
+      },
       "literal_string_escape": {
         "color": "#D9BF9C"
       },

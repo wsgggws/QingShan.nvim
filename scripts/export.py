@@ -286,6 +286,7 @@ def slides(p):
         "literal_number": color("gold"),
         "literal_date": color("gold"),
         "literal_string": color("string"),
+        "literal_string_doc": color("comment", italic=True),
         "literal_string_escape": color("sand"),
         "generic_deleted": color("red", background_color=p["diff_delete"]),
         "generic_emph": {"italic": True},

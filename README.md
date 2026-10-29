@@ -15,6 +15,10 @@
 - 适配 Telescope、nvim-cmp、blink.cmp、Neo-tree、nvim-tree、which-key、gitsigns 等插件。
 - 支持透明背景、非活动窗口变暗与高亮覆盖。
 
+Python 函数下方的 `"""docstring"""` 等由 Tree-sitter 识别为
+`@string.documentation` 的文档字符串，使用与注释相同的颜色与样式，
+并遵循 `styles.comments`；普通字符串保留字符串色。slides 导出中的文档字符串也使用注释色。
+
 ## 安装
 
 使用 lazy.nvim：

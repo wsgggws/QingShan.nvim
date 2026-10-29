@@ -38,6 +38,8 @@ class NativeFormats(unittest.TestCase):
         self.assertEqual(scopes["variable.parameter"], {"foreground": colors["sand"]})
         slides = json.loads((ROOT / "extras/slides/qingshan_theme.json").read_text())["code_block"]["chroma"]
         self.assertEqual(slides["comment"], {"color": colors["comment"], "italic": True})
+        self.assertEqual(slides["literal_string_doc"], slides["comment"])
+        self.assertEqual(slides["literal_string"], {"color": colors["string"]})
         self.assertEqual(slides["name"], {"color": colors["fg"]})
         self.assertEqual(slides["keyword"], {"color": colors["keyword"], "bold": True})
 
