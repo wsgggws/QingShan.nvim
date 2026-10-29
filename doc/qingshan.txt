@@ -1,9 +1,13 @@
-*qingshan.txt*  青山入墨 · QingShan — quiet greens for Neovim
+*qingshan.txt*  青山入墨 · QingShan — quiet mountain teal for Neovim
 
 青山如黛，代码如墨。                                           *qingshan*
 
 Requires Neovim 0.10+ and a true-color terminal or GUI.
 No plugin dependencies. Dark theme only.
+
+Muted blue-green backgrounds recall distant mountains. Paper-white variables,
+near-neutral stone gray comments, bamboo keywords, jade functions and sand
+parameters keep syntax distinct; italics and bold provide additional cues.
 
 LOAD                                                        *qingshan-load*
 >

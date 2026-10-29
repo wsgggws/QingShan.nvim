@@ -3,38 +3,38 @@
 name = "QingShan"
 
 [colors]
-foreground = "#DCE8D5"
-background = "#1D3229"
-cursor_bg = "#99CEBE"
-cursor_border = "#99CEBE"
-cursor_fg = "#182A22"
-selection_bg = "#99CEBE"
-selection_fg = "#182A22"
-compose_cursor = "#C5AD78"
-split = "#56785D"
-scrollbar_thumb = "#56785D"
-ansi = ["#182A22", "#D29580", "#A8C38B", "#C5AD78", "#9BBDB5", "#D7C5A0", "#99CEBE", "#AEC0AB"]
-brights = ["#6C866E", "#D29580", "#C6D8A3", "#D1B77F", "#9BBDB5", "#D7C5A0", "#99CEBE", "#DCE8D5"]
+foreground = "#DEE7DF"
+background = "#203237"
+cursor_bg = "#94C9CF"
+cursor_border = "#94C9CF"
+cursor_fg = "#1A292D"
+selection_bg = "#94C9CF"
+selection_fg = "#1A292D"
+compose_cursor = "#CCB17E"
+split = "#56767C"
+scrollbar_thumb = "#56767C"
+ansi = ["#1A292D", "#D29580", "#AAC39A", "#CCB17E", "#9DBCCE", "#D9BF9C", "#94C9CF", "#AFBFBA"]
+brights = ["#6B8387", "#D29580", "#C8D5A4", "#D1B77F", "#9DBCCE", "#D9BF9C", "#94C9CF", "#DEE7DF"]
 
 [colors.tab_bar]
-background = "#182A22"
+background = "#1A292D"
 
 [colors.tab_bar.active_tab]
-fg_color = "#99CEBE"
-bg_color = "#293F30"
+fg_color = "#94C9CF"
+bg_color = "#293D42"
 
 [colors.tab_bar.inactive_tab]
-fg_color = "#AEC0AB"
-bg_color = "#182A22"
+fg_color = "#AFBFBA"
+bg_color = "#1A292D"
 
 [colors.tab_bar.inactive_tab_hover]
-fg_color = "#DCE8D5"
-bg_color = "#243B2E"
+fg_color = "#DEE7DF"
+bg_color = "#26383E"
 
 [colors.tab_bar.new_tab]
-fg_color = "#ADA594"
-bg_color = "#182A22"
+fg_color = "#A7A6A3"
+bg_color = "#1A292D"
 
 [colors.tab_bar.new_tab_hover]
-fg_color = "#99CEBE"
-bg_color = "#243B2E"
+fg_color = "#94C9CF"
+bg_color = "#26383E"

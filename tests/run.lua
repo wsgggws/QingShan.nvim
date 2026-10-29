@@ -80,8 +80,24 @@ local function run()
   local function channel(color, index)
     return tonumber(color:sub(index, index + 1), 16)
   end
+  for _, surface in ipairs({ "bg", "bg_float", "bg_highlight" }) do
+    check(
+      channel(p[surface], 6) > channel(p[surface], 4) and channel(p[surface], 4) > channel(p[surface], 2),
+      "mountain teal surfaces retain a blue-green hue: " .. surface
+    )
+  end
   check(channel(p.comment, 2) > channel(p.comment, 4), "comments use a warm neutral rather than syntax green")
+  check(
+    math.max(channel(p.comment, 2), channel(p.comment, 4), channel(p.comment, 6))
+        - math.min(channel(p.comment, 2), channel(p.comment, 4), channel(p.comment, 6))
+      <= 8,
+    "comments remain near-neutral gray rather than sand"
+  )
   check(channel(p.keyword, 4) > channel(p.keyword, 2), "keywords retain a green accent")
+  check(
+    channel(p.jade, 6) > channel(p.jade, 4) and channel(p.keyword, 4) > channel(p.keyword, 6),
+    "cool jade functions differ in hue from bamboo keywords"
+  )
   check(contrast(p.fg, p.comment) >= 1.9, "variables remain visibly brighter than comments")
   check(contrast(p.keyword, p.comment) >= 1.2, "keywords stand apart from comments without font styles")
 
