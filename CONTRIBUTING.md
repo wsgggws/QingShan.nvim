@@ -12,7 +12,7 @@
 ## 色板与导出
 
 1. 在 `lua/qingshan/palette.lua` 修改命名颜色，在 `lua/qingshan/theme.lua` 修改角色与链接。默认高亮与用户配置 API 分别由 `theme.lua` 和 `init.lua` 管理。
-2. 修改跨工具映射时编辑 `scripts/export.py`，运行 `python3 scripts/export.py`。`extras/` 下的主题文件与 `palette.json` 随源码一同提交，便于单独导入。
+2. 修改跨工具映射时编辑 `scripts/export.py`，运行 `python3 scripts/export.py`。`extras/` 下的主题文件与 `palette.json` 随源码一同提交，便于单独导入。README 色块由同一命令生成到 `assets/swatches/`，随色板更新。
 3. 执行下方检查，再用 `nvim -u scripts/preview.lua` 观察实际效果。运行 `uv run scripts/screenshot.py` 更新 `assets/qingshan.png`，查看图片确认没有文字裁切、错误高亮或色板漂移。
 4. 更新 README 中的颜色、语义映射和 CHANGELOG；`python3 scripts/export.py --check` 应无差异。
 
