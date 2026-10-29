@@ -39,7 +39,6 @@ return {
 }
 ```
 
-本地安装可将仓库名替换为 `dir = vim.fn.expand("~/github/QingShan.nvim")`。
 安装后也可执行 `:colorscheme qingshan`。主题会自动启用 `termguicolors`。
 
 ## 配置
@@ -76,18 +75,22 @@ require("qingshan").setup({
 
 ## 色彩
 
-| 角色          | 色值                  |
-| ------------- | --------------------- |
-| 背景 / 正文   | `#203237` / `#DEE7DF` |
-| 注释 / 关键字 | `#A7A6A3` / `#96C3A2` |
-| 函数 / 参数   | `#94C9CF` / `#D9BF9C` |
-| 字符串 / 数字 | `#C8D5A4` / `#CCB17E` |
+| 角色 | 色值 | 色样 |
+| --- | --- | --- |
+| 背景 | `#203237` | ![#203237](assets/swatches/bg.svg) |
+| 正文与变量 | `#DEE7DF` | ![#DEE7DF](assets/swatches/fg.svg) |
+| 注释 | `#A7A6A3` | ![#A7A6A3](assets/swatches/comment.svg) |
+| 关键字 | `#96C3A2` | ![#96C3A2](assets/swatches/keyword.svg) |
+| 函数 | `#94C9CF` | ![#94C9CF](assets/swatches/jade.svg) |
+| 参数 | `#D9BF9C` | ![#D9BF9C](assets/swatches/sand.svg) |
+| 字符串 | `#C8D5A4` | ![#C8D5A4](assets/swatches/string.svg) |
+| 数字 | `#CCB17E` | ![#CCB17E](assets/swatches/gold.svg) |
 
 黛青背景取远山入墨之色；纸白变量、微暖石灰注释、竹青关键字、冷玉青函数与浅沙参数拉开层级，字体样式作为辅助。完整色板见 [palette.lua](lua/qingshan/palette.lua)。
 
 ## 其他配色
 
-[extras/](extras/README.md) 提供 WezTerm、tmux、fzf、bat、Git diff（delta）、Alfred 与 slides 的同色板主题文件，随色板同步更新。导入与重载方法见各工具说明；个人安装与统一切换命令在各自配置目录维护。
+其他工具的配色文件见 [extras/](extras/README.md)。
 
 ## 预览
 
